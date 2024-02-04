@@ -1,14 +1,33 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom'
+// import About from './Pages/About/About'
+// import MainLayout from './Layout/MainLayout'
+// import Products from './Pages/Products/Products'
+import myCreatedRouter from './Routes/Route'
 
-const myCreatedRouter = createBrowserRouter([
-  {
-    path:'/',
-    element:<div>This is my created Router</div>
-  }
-])
+
+// All this routes are shifted into Route component.
+
+
+// const myCreatedRouter = createBrowserRouter([
+//   {
+//     path:'/',
+//     element:<MainLayout></MainLayout>,
+//     children:[
+//       {
+//         path:'/about',
+//         element: <About></About>
+//       },
+//       {
+//         path:'/products',
+//         element: <Products></Products>
+//       }
+//     ]
+    
+//   }
+// ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
